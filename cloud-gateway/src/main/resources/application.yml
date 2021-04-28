@@ -1,0 +1,14 @@
+server:
+  port: 9005
+
+spring:
+  application:
+    name=API-GATEWAY
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:9006/eureka/
+    instance: localhost
